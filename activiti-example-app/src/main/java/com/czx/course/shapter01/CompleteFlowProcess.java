@@ -25,6 +25,7 @@ public class CompleteFlowProcess {
 	//初始化流程引擎
 	private static void initProcessEngine(){
 		ProcessEngineConfiguration config = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("course/shapter01/activiti.cfg.xml");
+		System.out.println(config.getDatabaseSchemaUpdate());
 		//创建流程引擎
 		ProcessEngine processEngine = config.buildProcessEngine();
 		//获取各个service
@@ -87,10 +88,10 @@ public class CompleteFlowProcess {
 		try {
 			//初始化流程引擎
 			initProcessEngine();
-			deployFlow();
-			/*String key = "leave";
+			//deployFlow();
+			String key = "leave";
 			getDeployment(key);
-			getInstanceDefine(key);*/
+			getInstanceDefine(key);
 			
 			/*//启动流程实例
 			String processDefinitionKey = "leave";
