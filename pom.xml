@@ -7,21 +7,77 @@
   <build/>
   <modules>
   	<module>activiti-example-app</module>
+  	<module>activiti-example-explorer</module>
   </modules>
   
   <properties>
   		<activiti.version>5.21.0</activiti.version>
+  		<batik.version>1.7</batik.version>
   		<mysql.driver.version>5.1.30</mysql.driver.version>
   		<common.dbcp>1.4</common.dbcp>
   </properties>
   
   <dependencyManagement>
   		<dependencies>
+  			<!-- activiti start-->
   			<dependency>
 			    <groupId>org.activiti</groupId>
 			    <artifactId>activiti-engine</artifactId>
 			    <version>${activiti.version}</version>
 			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-crystalball</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-diagram-rest</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-explorer</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-image-generator</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-json-converter</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-modeler</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-process-validation</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-simple-workflow</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-spring</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.activiti</groupId>
+			    <artifactId>activiti-process-validation</artifactId>
+			    <version>${activiti.version}</version>
+			</dependency>
+			
+			<!-- activiti end-->			
+			
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
